@@ -1,0 +1,83 @@
+/*defines our color pallette*/
+:root {
+    --color-primary:#076ef5;
+    --color-secondary:#4471ab;
+    --color-accent:#05e3f7;
+    --color-headings: #1b0760;
+    --color-body: #918ca4;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Mukta, Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.25;
+    color: var(--color-body);
+}
+
+h1,h2,h3{
+    color: var(--color-headings);
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: 6rem;
+}
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3rem;
+    
+}
+
+p {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+        font-size: 1.8rem;
+    }
+    h1 {
+        font-size: 8rem;
+    }
+    h2{
+        font-size: 4rem;
+    }
+    h3{
+        font-size: 2.4rem
+    }
+}
+
+/*Links for the products */
+a {
+    text-decoration: none;
+}
+
+.link-arrow{
+    color:var(--color-accent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;  
+}
+
+.link-arrow::after{
+    content: '-->';
+    margin-left: 8px;
+    transition: margin 0.20s;
+}
+
+.link-arrow:hover::after {
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .link-arrow {
+        font-size: 1.5rem;
+    }
+}
